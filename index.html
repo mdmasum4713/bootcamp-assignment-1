@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-image: linear-gradient(to top, #c4d2f5, #eaf1f5);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 22px;
+        border-bottom: 1px solid #ccc;
+        background: linear-gradient(to right, #f6f9ff, #f6f9ff);
+      }
+
+      #logo {
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+      }
+
+      #logo span {
+        color: orange;
+      }
+
+      #download-btn {
+        padding: 8px 16px;
+        background: linear-gradient(to right, #f6ad01, #e2c868);
+        border: none;
+        border-radius: 6px;
+        color: #000;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Banner Section */
+      #section-wrapper {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      #section-title {
+        font-size: 24px;
+        font-weight: 800;
+        color: #000;
+        margin-bottom: 10px;
+      }
+
+      #section-subtitle {
+        font-size: 14px;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+
+      #card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #e6edf9;
+        border-radius: 12px;
+        padding: 40px;
+        max-width: 1000px;
+        margin: 0 auto 40px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      #card-left {
+        flex: 1;
+        text-align: left;
+      }
+
+      #card-heading {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      #card-text {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      #card-button {
+        padding: 10px 20px;
+        background: linear-gradient(to right, #f6ad01, #e2c868);
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      #card-right {
+        flex: 1;
+        text-align: center;
+      }
+
+      #card-right img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Developer Goal Card */
+      .goal-card {
+        background: #e6edf9;
+        border-radius: 12px;
+        padding: 40px 30px;
+        max-width: 1000px;
+        margin: 0 auto 60px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .goal-card img {
+        width: 140px;
+        margin-bottom: 20px;
+      }
+
+      .goal-card h2 {
+        font-size: 24px;
+        color: #111;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+
+      .goal-card p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .goal-btn {
+        padding: 10px 20px;
+        background: linear-gradient(to right, #f6ad01, #e2c868);
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #111;
+        cursor: pointer;
+      }
+
+    
+
+      @media (max-width: 768px) {
+        #card {
+          flex-direction: column;
+          gap: 30px;
+          text-align: center;
+        }
+
+        #card-left,
+        #card-right {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .goal-card {
+          padding: 30px 20px;
+        }
+
+        .goal-card h2 {
+          font-size: 20px;
+        }
+
+        .goal-card img {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div id="logo">Career<span>.io</span></div>
+      <button id="download-btn">Download Resume</button>
+    </nav>
+
+    <!-- Banner Section -->
+    <section id="section-wrapper">
+      <h2 id="section-title">Why Web Development??</h2>
+      <p id="section-subtitle">
+        Web development is important because it underpins nearly all online
+        interactions and is a rapidly growing field. It's a crucial element of
+        digital marketing,
+      </p>
+
+      <div id="card">
+        <div id="card-left">
+          <h3 id="card-heading">I will Do Coding and Change The World</h3>
+          <p id="card-text">
+            Coding has the power to create positive change in the world by
+            enabling the development of technologies that can address various
+            problems and improve lives.
+          </p>
+          <button id="card-button">Let’s Discuss</button>
+        </div>
+        <div id="card-right">
+          <img
+            src="https://i.postimg.cc/DzFY425B/working-developer.png"
+            alt="Web Development Illustration"
+          />
+        </div>
+      </div>
+
+      <!-- Developer Goal Card Section -->
+      <div class="goal-card">
+        <img
+          src="https://i.postimg.cc/xjcgCsLk/hero-developer.png"
+          alt="Developer Icon"
+        />
+        <h2>"In 2025, I hope to become a Developer."</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum has been the industry's standard dummy text.
+        </p>
+        <button class="goal-btn">Let's Connect</button>
+      </div>
+    </section>
+  </body>
+</html>
