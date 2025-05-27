@@ -43,7 +43,6 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       }
 
-      /* Banner Section */
       #section-wrapper {
         padding: 60px 20px;
         text-align: center;
@@ -112,7 +111,6 @@
         height: auto;
       }
 
-      /* Developer Goal Card */
       .goal-card {
         background: #e6edf9;
         border-radius: 12px;
@@ -152,7 +150,42 @@
         cursor: pointer;
       }
 
-    
+      /* My Inspiration Section */
+      #inspiration {
+        max-width: 1000px;
+        margin: 0 auto 80px;
+        background: #bae7fa;
+        border-radius: 10px;
+        padding: 30px 20px;
+        text-align: center;
+        border: 2px solid #b3cbd8;
+      }
+
+      #inspiration h2 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 12px;
+      }
+
+      #inspiration p {
+        margin-bottom: 30px;
+        color: #555;
+        font-size: 14px;
+      }
+
+      #video {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      #video iframe {
+        width: 100%;
+        height: 415px;
+        border: none;
+      }
 
       @media (max-width: 768px) {
         #card {
@@ -179,6 +212,85 @@
         .goal-card img {
           width: 100px;
         }
+      }
+      /* target */
+      #targets {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to top, #bde8f7, #eaf7ff);
+      }
+
+      .target-title {
+        font-size: 26px;
+        font-weight: 800;
+        color: #111;
+        margin-bottom: 10px;
+      }
+
+      .target-subtitle {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .target-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .target-card {
+        background: linear-gradient(to top, #bfecf1, #c8ddeb);
+        border-radius: 14px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        padding: 30px 20px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .target-card img {
+        width: 60px;
+        margin-bottom: 20px;
+      }
+
+      .target-card h3 {
+        margin-bottom: 12px;
+        font-size: 18px;
+        color: #111;
+        font-weight: 700;
+      }
+
+      .target-card a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #111;
+        font-size: 14px;
+      }
+      /* footer */
+      #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e6f7ff;
+        padding: 10px 20px;
+      }
+
+      #footer-text {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      #footer-icons {
+        display: flex;
+        gap: 10px;
+      }
+
+      #footer-icons a img {
+        width: 28px;
+        height: 28px;
       }
     </style>
   </head>
@@ -224,12 +336,86 @@
         />
         <h2>"In 2025, I hope to become a Developer."</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+           And is simply example content of the printing and typesetting
           industry. <br />
-          Lorem Ipsum has been the industry's standard dummy text.
+          And has been the industry's standard example content.
         </p>
         <button class="goal-btn">Let's Connect</button>
       </div>
+
+      <!-- My Inspiration Section -->
+      <div id="inspiration">
+        <h2>My Inspiration</h2>
+        <p>
+            Ta is simply example content of the printing and typesetting
+          industry. Ta has been the industry's standard example content
+        </p>
+        <div id="video">
+          <iframe
+            src="https://www.youtube.com/embed/DGHn2uOAVCE?si=MskBLBxERYWXWrWS"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
     </section>
+    <!--  My Current Target Section STARTS -->
+    <div id="targets">
+      <h2 class="target-title">My Current Target</h2>
+      <p class="target-subtitle">
+        I will complete my targets on time and kickstart my career
+      </p>
+      <div class="target-cards">
+        <div class="target-card">
+          <img
+            src="https://i.postimg.cc/xCj86YkT/html-icon.png"
+            alt="HTML Logo"
+          />
+          <h3>HTML</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="target-card">
+          <img
+            src="https://i.postimg.cc/8Pcyq68L/css-icon.png"
+            alt="CSS Logo"
+          />
+          <h3>CSS</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="target-card">
+          <img
+            src="https://i.postimg.cc/C1ydktDm/tailwind-icon.png"
+            alt="Tailwind Logo"
+          />
+          <h3>Tailwind</h3>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- My Current Target Section ENDS -->
+    <div id="footer">
+      <div id="footer-text">An Open Commitment by Masum.kdk</div>
+      <div id="footer-icons">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+            alt="Facebook"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+            alt="GitHub"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+        /></a>
+      </div>
+    </div>
   </body>
 </html>
